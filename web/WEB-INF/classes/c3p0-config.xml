@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <c3p0-config>
   <!-- This app is massive! -->
-  <named-config name="mysql"> 
+  <named-config name="mysql">
   	<property name="driverClass">com.mysql.jdbc.Driver</property>
     <property name="jdbcUrl">jdbc:mysql://localhost:3306/myblog</property>
     <property name="user">root</property>

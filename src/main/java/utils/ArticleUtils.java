@@ -1,7 +1,6 @@
 package main.java.utils;
 
 import main.java.pojo.Article;
-import main.java.pojo.AxisArticle;
 
 import java.util.List;
 
@@ -10,6 +9,7 @@ import java.util.List;
  *	
  */
 public class ArticleUtils {
+
 
 	/**
 	 * 处理下时间
@@ -64,25 +64,25 @@ public class ArticleUtils {
 	 * @param article
 	 * @return
 	 */
-	public static AxisArticle getAxisArticle(Article article) {
-
-		AxisArticle axisArticle = new AxisArticle();
-		
-		axisArticle.setTitle(article.getTitle());
-		axisArticle.setId(article.getId());
-		
-		//2017-09-20 21:27:14
-		String year=StringUtils.cutString(article.getTime(),0,4);
-		String month=StringUtils.cutString(article.getTime(),5,7);
-		String day=StringUtils.cutString(article.getTime(),8,10);
-		
-		
-		
-		axisArticle.setYear(Integer.valueOf(year)) ;
-		axisArticle.setMonth(Integer.valueOf(month)) ;
-		axisArticle.setDay(Integer.valueOf(day)) ;
-		
-		
-		return axisArticle;
-	}
+//	public static AxisArticle getAxisArticle(Article article) {
+//
+//		AxisArticle axisArticle = new AxisArticle();
+//
+//		axisArticle.setTitle(article.getTitle());
+//		axisArticle.setId(article.getId());
+//
+//		//2017-09-20 21:27:14
+//		String year=StringUtils.cutString(article.getTime(),0,4);
+//		String month=StringUtils.cutString(article.getTime(),5,7);
+//		String day=StringUtils.cutString(article.getTime(),8,10);
+//
+//
+//
+//		axisArticle.setYear(Integer.valueOf(year)) ;
+//		axisArticle.setMonth(Integer.valueOf(month)) ;
+//		axisArticle.setDay(Integer.valueOf(day)) ;
+//
+//
+//		return axisArticle;
+//	}
 }
