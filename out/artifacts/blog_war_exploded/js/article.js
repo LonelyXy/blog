@@ -8,7 +8,7 @@ function love_article(article_id){
         url:"StarArticleServlet?id="+article_id ,
         async:true,
 		success:function(data){
-            window.location.reload();
+            document.getElementById("love").innerHTML= "&nbsp;"+ 1+"&nbsp;";
 		}
     });
 }
